@@ -6,11 +6,22 @@
     <link href="cars.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <form>
-        <input id="name" type="text" name="name" placeholder="Name">
-        <input id="price" type="text" name="price" placeholder="Price">
-        <input id="count" type="number" name="price" placeholder="Count">
-        <input type="submit" value="SEND" class="settings">
+    <form action="cars.php" method="post">
+        <div class="block1">
+            <span><b>Brand car:</b></span><br>
+            <input id="brand" type="text" name="brand" placeholder="Brand car"><br>
+        </div>
+        <div class="block1">
+            <span><b>Price:</b></span><br>
+            <input id="price" type="text" name="price" placeholder="Price"><br>
+        </div>
+        <div class="block1">
+            <span><b>Count:</b></span><br>
+            <input id="count" type="number" name="count" placeholder="Count">
+        </div>
+        <div>
+            <input type="submit" value="SEND" class="settings">
+        </div>
     </form>
 
     <table border="1">
