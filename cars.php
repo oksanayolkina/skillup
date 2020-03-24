@@ -9,10 +9,6 @@ if( !empty( $brand ) && !empty( $price ) && !empty( $count ) )
 {
     echo "Додано авто в кількості " . $count . " шт";
 }
-elseif( empty( $_POST['brand'] ) || empty( $_POST['price'] ) || empty( $_POST['count'] )  )
-{
-    echo "Запис не додано";
-}
 else
 {
     echo "Щось трапилось";
