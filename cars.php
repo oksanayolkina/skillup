@@ -1,14 +1,19 @@
 <?php
 
-if( $_GET['action'] === 'car' && $_POST['count'] < 5 )
+$action = $_GET['action'];
+$brand  = $_POST['brand'];
+$price  = $_POST['price'];
+$count  = $_POST['count'];
+
+if( !empty( $brand ) && !empty( $price ) && !empty( $count ) )
 {
-    echo "Додано авто в кількості до 5 шт";
+    echo "Додано авто в кількості " . $count . " шт";
 }
-elseif( $_GET['action'] === 'car' && $_POST['count'] < 10 )
+elseif( empty( $_POST['brand'] ) || empty( $_POST['price'] ) || empty( $_POST['count'] )  )
 {
-    echo "Додано авто в кількості до 10 шт";
+    echo "Запис не додано";
 }
 else
 {
-    echo "Запис не додано";
+    echo "Щось трапилось";
 }
