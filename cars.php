@@ -17,7 +17,6 @@ $count  = $_POST['count'] ?? ''; // isset($_POST['count']) ? $_POST['count'] : '
 //{
 //    echo "Щось трапилось";
 //}
- rand();
 
 switch( true )
 {
