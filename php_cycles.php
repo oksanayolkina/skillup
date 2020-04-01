@@ -1,16 +1,16 @@
 <?php
 //$arr_en = range( 'a', 'z' );
+$str = "aoo";
 $arr_en = [ 'a', 'o', 'k', 's', 'n' ];
 $len    = count( $arr_en ) - 1;
 
-//print_r( $arr_en );
+$count = 0;
 
-//$name = $arr_en[rand(0,$len)] . $arr_en[rand(0,$len)] . $arr_en[rand(0,$len)];
-
-while( ( $name = $arr_en[ rand( 0, $len ) ] . $arr_en[ rand( 0, $len ) ] . $arr_en[ rand( 0, $len ) ] ) !== "aoo" )
+do
 {
-    echo "$name is Not aoo <br>";
+    $count++;
+    $name = $arr_en[ rand( 0, $len) ] . $arr_en[ rand( 0, $len) ] . $arr_en[ rand( 0, $len) ];
 }
-echo "FOUND $name";
+while( $name != $str );
 
-die();
+echo "FOUND $name - $count";
